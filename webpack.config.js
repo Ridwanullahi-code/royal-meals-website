@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Royal Meal Project',
-      template: 'src/template.html',
+      template: 'src/index.html',
       filename: 'index.html',
     }),
     // only update what changed on hot reload
