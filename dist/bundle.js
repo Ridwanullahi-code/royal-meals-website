@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n\r\n\r\n(0,_modules_home_js__WEBPACK_IMPORTED_MODULE_0__.main)();\n\n//# sourceURL=webpack://royal-meal-website/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/home.js */ \"./src/modules/home.js\");\n\n\n(0,_modules_home_js__WEBPACK_IMPORTED_MODULE_0__.main)();\n\n//# sourceURL=webpack://royal-meal-website/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"main\": () => (/* binding */ main)\n/* harmony export */ });\nconst main = () => {\r\n\tconst mainPage = document.querySelector(\".meals\");\r\nfor (let i = 0; i < 6; i++) {\r\n\tmainPage.innerHTML += `\r\n    <div class=\"image-container\">\r\n\t\t\t<img src=\"/meals.jpg\" alt=\"\" height=\"70%\" width=\"70%\">\r\n\t\t\t<div class=\"likes\">\r\n\t\t\t\t<p>Serving two plages</p>\r\n\t\t\t\t<i class=\"fa-regular fa-heart\"></i>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"likes-counter\">\r\n\t\t\t<p>2 likes</p>\r\n\t\t\t</div>\r\n\t\t\t<ul class=\"users-sections\">\r\n\t\t\t\t<li class=\"comments\">\r\n\t\t\t\t\t<a href=\"#\">Commnets </a>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li class=\"reservations\">\r\n\t\t\t\t\t<a href=\"#\">Reservations</a>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n    </div>\r\n    `;\r\n}\r\n}\r\n\n\n//# sourceURL=webpack://royal-meal-website/./src/modules/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"main\": () => (/* binding */ main)\n/* harmony export */ });\nconst main = () => {\n\tconst mainPage = document.querySelector(\".meals\");\nfor (let i = 0; i < 6; i++) {\n\tmainPage.innerHTML += `\n    <div class=\"image-container\">\n\t\t\t<img src=\"../meals.jpg\" alt=\"\" height=\"70%\" width=\"70%\">\n\t\t\t<div class=\"likes\">\n\t\t\t\t<p>Serving two plages</p>\n\t\t\t\t<i class=\"fa-regular fa-heart\"></i>\n\t\t\t</div>\n\t\t\t<div class=\"likes-counter\">\n\t\t\t<p>2 likes</p>\n\t\t\t</div>\n\t\t\t<ul class=\"users-sections\">\n\t\t\t\t<li class=\"comments\">\n\t\t\t\t\t<a href=\"#\">Commnets </a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"reservations\">\n\t\t\t\t\t<a href=\"#\">Reservations</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n    </div>\n    `;\n}\n}\n\n\n//# sourceURL=webpack://royal-meal-website/./src/modules/home.js?");
 
 /***/ })
 
@@ -103,7 +103,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("bb0dff81b98f5617357f")
+/******/ 		__webpack_require__.h = () => ("bd1b534d89aae5df0e38")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

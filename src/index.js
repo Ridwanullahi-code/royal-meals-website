@@ -1,3 +1,4 @@
-import { main } from "./modules/home.js";
+import fetchImagesApi from './modules/fetch-images.js';
+import './index.css';
 
-main();
+fetchImagesApi();
