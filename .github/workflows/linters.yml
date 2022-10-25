@@ -8,11 +8,7 @@ env:
 jobs:
   lighthouse:
     name: Lighthouse
-<<<<<<< HEAD
-    runs-on: ubuntu-22.04
-=======
     runs-on: ubuntu-18.04
->>>>>>> 99ec59670cf2774527d7a4ce191c590ac723fd50
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -24,11 +20,7 @@ jobs:
         run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
   webhint:
     name: Webhint
-<<<<<<< HEAD
     runs-on: ubuntu-22.04
-=======
-    runs-on: ubuntu-18.04
->>>>>>> 99ec59670cf2774527d7a4ce191c590ac723fd50
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -37,20 +29,12 @@ jobs:
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@7.x
-<<<<<<< HEAD
           [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc
-=======
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
->>>>>>> 99ec59670cf2774527d7a4ce191c590ac723fd50
       - name: Webhint Report
         run: npx hint .
   stylelint:
     name: Stylelint
-<<<<<<< HEAD
     runs-on: ubuntu-22.04
-=======
-    runs-on: ubuntu-18.04
->>>>>>> 99ec59670cf2774527d7a4ce191c590ac723fd50
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -59,7 +43,6 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-<<<<<<< HEAD
           [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
@@ -80,14 +63,6 @@ jobs:
   nodechecker:
     name: node_modules checker
     runs-on: ubuntu-22.04
-=======
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
-      - name: Stylelint Report
-        run: npx stylelint "**/*.{css,scss}"
-  nodechecker:
-    name: node_modules checker
-    runs-on: ubuntu-18.04
->>>>>>> 99ec59670cf2774527d7a4ce191c590ac723fd50
     steps:
       - uses: actions/checkout@v2
       - name: Check node_modules existence
