@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+// eslint-disable-next-line no-tabs
 const uri = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian';
 const fetchImages = fetch(uri);
 
@@ -9,6 +11,7 @@ const fetchImagesApi = () => {
     .then((data) => {
       data.meals.forEach((item) => {
         mainPage.innerHTML += ` 
+				
 				<div class="image-container">
 					<img src="${item.strMealThumb}" alt="" height="70%" width="70%">
 					<div class="likes">
