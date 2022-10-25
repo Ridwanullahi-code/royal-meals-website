@@ -1,7 +1,7 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -10,61 +10,62 @@
 ###############################################################
 */
 .meals {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10%;
-	flex-wrap: wrap
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  flex-wrap: wrap;
 }
 
 .image-container {
   width: 30%;
-	padding-top: 3%;
+  padding-top: 3%;
 }
 
 .likes {
-	padding: 2%;
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	width: 70%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 70%;
 }
 
-.fa-heart{
-	align-self: flex-end;
-	font-size: 28px;
-	padding: 2%;
+.fa-heart {
+  align-self: flex-end;
+  font-size: 28px;
+  padding: 2%;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-	text-decoration: none;
-	color: black;
-}
-.users-sections {
-	width: 70%;
+  text-decoration: none;
+  color: black;
 }
 
-.comments, 
+.users-sections {
+  width: 70%;
+}
+
+.comments,
 .reservations {
-	border: 1px solid black;
-	padding: 2% 0;
-	font-size: 20px;
-	text-align: center;
-	margin: 3%;
+  border: 1px solid black;
+  padding: 2% 0;
+  font-size: 20px;
+  text-align: center;
+  margin: 3%;
 }
 
 .likes-counter {
-	display: flex;
-	align-content: center;
-	justify-content: flex-end;
-	width: 70%;
-	padding: 2%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  width: 70%;
+  padding: 2%;
 }
 
 .likes-counter > p {
-	font-size: 15px;
+  font-size: 15px;
 }
