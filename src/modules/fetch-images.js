@@ -16,11 +16,16 @@ const fetchImagesApi = () => {
 		<div class="image-container" id="${item.idMeal}">
 			<img src="${item.strMealThumb}" alt="" height="70%" width="70%">
 			<div class="likes">
-				<p>Serving two plages</p>
+				<p>${item.strMeal}</p>
+				<div class="like-container">
 					<button class="likes-btn">
 						<i class="fa-regular fa-heart" id="hearts"></i>
 					</button>
-					<p class="count-text">0</p>
+					<div class="span">
+						<span class="count-text">0</span>
+						<span>likes</span>
+					</div>
+				</div>	
 			</div>
 			<ul class="users-sections">
 				<li class="comments">
