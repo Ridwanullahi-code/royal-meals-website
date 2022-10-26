@@ -1,11 +1,20 @@
 .container {
-  display: flex;
+  display: none;
   width: 70vw;
   height: 90vh;
   flex-direction: column;
   justify-content: center;
   border: 2px solid black;
   align-items: center;
+}
+
+.show {
+  display: flex;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .grid-container {

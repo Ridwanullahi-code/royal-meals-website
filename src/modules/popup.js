@@ -1,12 +1,11 @@
 export default class PopUp {
-    
   static commentPop = () => {
-    const section = document.querySelector(".meals");
+    const section = document.querySelector('.meals');
     section.innerHTML = `
         <div class="container">
         <div class=first-box>
         <img class="image" src="./meals.jpg" alt ="meal-image">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-xmark close"></i>
         </div>
         <h2>Meal 3</h2>
         <div class="grid-container">
@@ -30,13 +29,14 @@ export default class PopUp {
         </div>
         `;
   };
+
     static reservatePop = () => {
-        const section = document.querySelector(".meals");
-        section.innerHTML = `
+      const section = document.querySelector('.meals');
+      section.innerHTML = `
         <div class="container">
         <div class=first-box>
         <img class="image" src="./meals.jpg" alt ="meal-image">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-xmark close"></i>
         </div>
         <h2>Meal 3</h2>
         <div class="grid-container">
@@ -59,6 +59,5 @@ export default class PopUp {
         </div>
         </div>
         `;
-        
     }
 }

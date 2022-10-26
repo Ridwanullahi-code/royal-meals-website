@@ -1,5 +1,5 @@
 export default class Main {
-  static main (){
+  static main() {
     const mainPage = document.querySelector('.meals');
     for (let i = 0; i < 6; i += 1) {
       mainPage.innerHTML += `
@@ -17,11 +17,11 @@ export default class Main {
 <a href="#" class="comment-btn">Commnets</a>
 </li>
 <li class="reservations">
-<a href="#" class='reservate-btn'>Reservations</a>
+<a class="reserve-btn" href="#">Reservations</a>
 </li>
 </ul>
 </div>
 `;
     }
-  };
+  }
 }
