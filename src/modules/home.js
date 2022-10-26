@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default class Main {
   static main() {
     const mainPage = document.querySelector('.meals');
@@ -25,3 +26,5 @@ export default class Main {
     }
   }
 }
+=======
+>>>>>>> e4a3e8991e7640ec5cad8ca992e8cb91682aaebc
