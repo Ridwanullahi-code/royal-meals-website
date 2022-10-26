@@ -1,38 +1,41 @@
 /* eslint-disable no-tabs */
-// eslint-disable-next-line no-tabs
+// eslint-disable-next-line no-tabs, no-unused-vars
+import { likePost, getLikes } from './likes.js';
+
 const uri = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian';
-const fetchImages = fetch(uri);
 
 const mainPage = document.querySelector('.meals');
 
 const fetchImagesApi = () => {
-  fetchImages
+  fetch(uri)
     .then((response) => response.json())
     .then((data) => {
       data.meals.forEach((item) => {
         mainPage.innerHTML += ` 
 				
-				<div class="image-container">
-					<img src="${item.strMealThumb}" alt="" height="70%" width="70%">
-					<div class="likes">
-						<p>Serving two plages</p>
-						<i class="fa-regular fa-heart"></i>
-					</div>
-					<div class="likes-counter">
-						<p>2 likes</p>
-					</div>
-					<ul class="users-sections">
-						<li class="comments">
-							<a href="#">Commnets </a>
-						</li>
-					<li class="reservations">
-						<a href="#">Reservations</a>
-					</li>
-					</ul>
+		<div class="image-container" id="${item.idMeal}">
+			<img src="${item.strMealThumb}" alt="" height="70%" width="70%">
+			<div class="likes">
+				<p>Serving two plages</p>
+					<button class="likes-btn">
+						<i class="fa-regular fa-heart" id="hearts"></i>
+					</button>
+					<p class="count-text">0</p>
+			</div>
+			<ul class="users-sections">
+				<li class="comments">
+					<a href="#">Commnets </a>
+				</li>
+			<li class="reservations">
+				<a href="#">Reservations</a>
+			</li>
+			</ul>
     	</div>
     `;
       });
+      getLikes();
+      likePost();
     });
 };
 
-module.exports = fetchImagesApi;
+export default fetchImagesApi;
