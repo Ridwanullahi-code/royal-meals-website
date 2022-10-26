@@ -8,7 +8,6 @@ const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 export function likePost() {
   const likeBtns = document.querySelectorAll('.likes-btn');
-	// const likeBtnIcon = document.querySelectorAll('.fa-heart');
 	const cardSection = document.querySelectorAll('.image-container');
 	const likeCount = document.querySelectorAll('.count-text');
 	likeBtns.forEach((btn, index) => {
