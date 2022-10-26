@@ -1,9 +1,10 @@
-export const main = () => {
-  const mainPage = document.querySelector('.meals');
-  for (let i = 0; i < 6; i++) {
-    mainPage.innerHTML += `
+export default class Main {
+  static main (){
+    const mainPage = document.querySelector('.meals');
+    for (let i = 0; i < 6; i += 1) {
+      mainPage.innerHTML += `
 <div class="image-container">
-<img src="../meals.jpg" alt="" height="70%" width="70%">
+<img src="meals.jpg" alt="meal-image" height="70%" width="70%">
 <div class="likes">
 <p>Serving two plages</p>
 <i class="fa-regular fa-heart"></i>
@@ -13,13 +14,14 @@ export const main = () => {
 </div>
 <ul class="users-sections">
 <li class="comments">
-<a href="#">Commnets </a>
+<a href="#" class="comment-btn">Commnets</a>
 </li>
 <li class="reservations">
-<a href="#">Reservations</a>
+<a href="#" class='reservate-btn'>Reservations</a>
 </li>
 </ul>
 </div>
 `;
-  }
-};
+    }
+  };
+}

@@ -1,4 +1,8 @@
 import '../css/index.css';
-import { main } from './modules/home.js';
+import "../css/popup.css"
+import Main from './modules/home.js';
+import Action from "./modules/action.js"
 
-main();
+Main.main();
+Action.comment();
+Action.reservate();
