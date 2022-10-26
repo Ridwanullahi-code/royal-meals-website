@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 20 40px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+ul li.active {
+  text-decoration: underline;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
 /*
 ###############################################################
 #+++++++++++++++++++MAIN SECTION++++++++++++++++++++++++++++++#
@@ -68,4 +93,12 @@ a {
 
 .likes-counter > p {
   font-size: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(161, 94, 94);
+  padding: 20px;
+  height: 50px;
 }
