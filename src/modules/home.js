@@ -1,10 +1,10 @@
-export const main = () => {
+const main = () => {
   const mainPage = document.querySelector('.meals');
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i += 1) {
     mainPage.innerHTML += `
 <div class="image-container">
 <img src="../meals.jpg" alt="" height="70%" width="70%">
-<div class="likes">
+<div class="likes">y
 <p>Serving two plages</p>
 <i class="fa-regular fa-heart"></i>
 </div>
@@ -23,3 +23,5 @@ export const main = () => {
 `;
   }
 };
+
+module.exports = { main };
