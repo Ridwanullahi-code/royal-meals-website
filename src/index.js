@@ -1,4 +1,9 @@
-import fetchImagesApi from './modules/fetch-images.js';
-import './index.css';
+import '../css/index.css';
+import '../css/popup.css';
+import Main from './modules/home.js';
+import Action from './modules/action.js';
+// import fetchImagesApi from "./modules/fetch-images.js";
 
-fetchImagesApi();
+Main.main();
+Action.comment();
+Action.removePop();
