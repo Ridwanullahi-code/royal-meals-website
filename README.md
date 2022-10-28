@@ -1,14 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Royal Meals Website
 
-> Description the project.
-
-## **Prerequisites:**
-
+> The functionalities of the website based on giving a customers a list of available foods and provides a way of showing opinion on food through likes and comments. The website built with the HTML, CSS, JavaScript.
 
 ## Built With
-
 
 - HTML
 - CSS
@@ -19,7 +15,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ridwanullahi-code.github.io/royal-meals-website/)
 
 
 ## Getting Started
