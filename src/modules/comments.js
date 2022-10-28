@@ -8,7 +8,7 @@ function countingComments(data, link) {
 }
 
 const getComments = async (id) => {
-  const commentTitle = document.querySelector('.nav-item');
+  const commentTitle = document.querySelector('.recipe-count');
   commentTitle.innerHTML = 'Comments (0)';
   await fetch(`${url}?item_id=${id}`)
     .then((response) => response.json())
