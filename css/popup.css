@@ -1,11 +1,66 @@
-.container {
-  display: none;
-  width: 70vw;
-  height: 90vh;
+.comment-popup {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(px);
+  background-color: rgba(58, 59, 62, 0.861);
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.image-title,
+.comment-header,
+.form-title {
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.fa-xmark {
+  font-size: 48px;
+  color: #fff;
+}
+
+.meal-image {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid black;
   align-items: center;
+}
+
+.meal-img {
+  padding: 10px;
+  width: 50%;
+  height: 50%;
+  border-radius: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.first-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  font-size: 35px;
 }
 
 .show {
@@ -18,9 +73,10 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
 
 textarea {
@@ -49,16 +105,43 @@ form {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 3%;
 }
 
-input {
+input,
+textarea {
   border: 1px solid grey;
-  padding: 5px;
   border-radius: 5px;
   outline: none;
+  padding: 14px 20px;
+  font-size: 20px;
+  width: 50%;
+}
+
+input[type='submit'] {
+  width: 15%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .comment-btn {
   font-size: 20px;
   justify-self: flex-start;
+}
+
+.comment-elements {
+  padding: 14px 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.comment-elements:nth-child(odd) {
+  background-color: grey;
+}
+
+.recipe-count {
+  font-size: 25px;
+  color: #fff;
+  z-index: 100px;
+  padding: 10px;
 }
