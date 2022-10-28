@@ -1,6 +1,4 @@
-/* eslint-disable no-alert */
 /* eslint-disable array-callback-return */
-/* eslint-disable no-console */
 const apiKey = 'joCHrYXsTSpxjlRC4nhW';
 const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${apiKey}/comments/`;
 
@@ -10,7 +8,7 @@ function countingComments(data, link) {
 }
 
 const getComments = async (id) => {
-  const commentTitle = document.querySelector('.comment-title');
+  const commentTitle = document.querySelector('.nav-item');
   commentTitle.innerHTML = 'Comments (0)';
   await fetch(`${url}?item_id=${id}`)
     .then((response) => response.json())
@@ -20,21 +18,22 @@ const getComments = async (id) => {
       commentList.innerHTML = '';
       data.map((comment) => {
         const addingComment = document.createElement('li');
+        addingComment.classList.add('comment-elements');
         if (comment.comment === '' || comment.username === '') {
           return;
         }
         addingComment.innerHTML = `
-          <span>${comment.comment}</span>
-          <span>${comment.username}</span>
-          <span>${comment.creation_date}</span>
+          Username: <span>${comment.username}</span> |
+          Comment: <span>${comment.comment}</span> |
+          Date: <span>${comment.creation_date}</span>
         `;
         commentList.appendChild(addingComment);
       }).join('');
     });
 };
 
-function postComments(username, comment, id) {
-  fetch(url, {
+const postComments = async (username, comment, id) => {
+  await fetch(url, {
     method: 'POST',
     body: JSON.stringify({
       item_id: id,
@@ -47,6 +46,6 @@ function postComments(username, comment, id) {
   }).then(() => {
     getComments(id);
   });
-}
+};
 
 export { postComments, getComments };

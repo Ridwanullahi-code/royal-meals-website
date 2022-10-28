@@ -1,26 +1,20 @@
 /* eslint-disable no-console */
 import { postComments, getComments } from './comments.js';
 
+const uri = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
+
+const commentPopupContainer = document.querySelector('.comment-popup');
+const mealImage = document.querySelector('.meal-img');
+const imageTitle = document.querySelector('.image-title');
+const mealRecipe = document.querySelector('.meal-recipe');
+const close = document.querySelector('.close');
+
 class PopUp {
   static commentPop = (id) => {
-    const section = document.querySelector('.meals');
+    const section = document.querySelector('.comment-form');
     section.innerHTML = `
-    <div class="container">
-      <div class=first-box>
-        <img class="image" src="meals.jpg" alt ="meal-image">
-        <i class="fa-solid fa-xmark close"></i>
-      </div>
-      <h2>Meal 3</h2>
-      <div class="grid-container">
-        <ul class="comment-list"></li>
-      </div>
-      <div class="comment-section">
-        <h3 class="comment-title">Comment (2)</h3>
-        <div class="display-com">
-        <p class = "time">2021: </p>
-      </div>
       <form class="form" id=${id}>
-        <h3>Add a comment</h3>
+        <h3 class="form-title">Add a comment</h3>
         <input class="name" type="text" placeholder="Your name" required>
         <textarea class="subject" cols = 30 rows = 5 placeholder="Your insights" required></textarea>
         <input class="submit-comment" type="submit" value="Comment">
@@ -45,7 +39,18 @@ function displayPopupWindow() {
     btn.addEventListener('click', () => {
       PopUp.commentPop(btn.id);
       getComments(btn.id);
+      fetch(`${uri}${btn.id}`)
+        .then((response) => response.json())
+        .then((data) => {
+          mealImage.setAttribute('src', data.meals[0].strMealThumb);
+          imageTitle.innerHTML = data.meals[0].strMeal;
+          mealRecipe.innerHTML = data.meals[0].strInstructions;
+          commentPopupContainer.classList.remove('hidden');
+        });
     });
+  });
+  close.addEventListener('click', () => {
+    commentPopupContainer.classList.add('hidden');
   });
 }
 
