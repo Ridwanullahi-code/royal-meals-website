@@ -7,6 +7,7 @@ export function likePost() {
   const likeCount = document.querySelectorAll('.count-text');
   likeBtns.forEach((btn, index) => {
     btn.addEventListener('click', () => {
+      btn.style.color = 'red';
       likeCount[index].innerHTML = Number(likeCount[index].innerHTML) + 1;
       fetch(url, {
         method: 'POST',

@@ -33,15 +33,15 @@
 }
 
 .fa-xmark {
-  font-size: 48px;
+  font-size: 52px;
   color: #fff;
 }
 
 .meal-image {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 30px;
 }
 
 .meal-img {
