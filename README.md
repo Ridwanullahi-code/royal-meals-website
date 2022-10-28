@@ -4,12 +4,18 @@
 
 > Description the project.
 
+## **Prerequisites:**
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+
+- HTML
+- CSS
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Webpack]((https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/webpack_v1_1.md))
+
+- Vs Code
 
 ## Live Demo (if available)
 
@@ -18,45 +24,72 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Basic Knowledge of HTML & CSS
+- Basic Knowledge of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) & [ES6](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/lesson_es6-what_is_it_about.md) syntax
+- Basic Knowledge of [Webpack](https://webpack.js.org/guides/getting-started/) setup
+- Basic Knowledge of Git Command (Version Control System)
+- Basic Knowledge of Vs code (IDE)
+ 
 
 ### Setup
 
-### Install
+```
+git clone https://github.com/Ridwanullahi-code/royal-meals-website.git
+```
 
+or
+
+```
+git clone git@github.com:Ridwanullahi-code/royal-meals-website.git
+```
+
+### Install
+```
+npm install -y
+```
+```
+npm install webpack webpack-cli webpack-dev-server --save-dev
+```
 ### Usage
+To run the project on server, run below command
+
+```
+npm start
+```
 
 ### Run tests
 
-### Deployment
+```
+npm test
+```
 
+
+### Deployment
+The project was deployed on github pages
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Ridwan Ajayi](https://github.com/Ridwanullahi-code)
+- LinkedIn: [Ridwan Ajayi](https://www.linkedin.com/in/ajayi-ridwan-2a1515199/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Kennedy Omondi](https://github.com/kennankole)
+- Twitter: [Kennedy](https://twitter.com/obwombe_kennedy)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the  [issues page](https://github.com/Ridwanullahi-code/royal-meals-website/issues/)
 
 ## Show your support
 
@@ -64,12 +97,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Microverse](https://www.microverse.org/)
 
 ## 📝 License
+This project is [MIT](https://choosealicense.com/licenses/mit/LICENSE) licensed.
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

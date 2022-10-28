@@ -2,18 +2,18 @@
 const apiKey = 'joCHrYXsTSpxjlRC4nhW';
 const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${apiKey}/comments/`;
 
-function countingComments(data, link) {
-  link.innerHTML = `Recipes (${data.length})`;
+function commentCounter(data, link) {
+  link.innerHTML = `Comments (${data.length})`;
   return data.length;
 }
 
 const getComments = async (id) => {
-  const commentTitle = document.querySelector('.recipe-count');
+  const commentTitle = document.querySelector('.comment-count');
   commentTitle.innerHTML = 'Comments (0)';
   await fetch(`${url}?item_id=${id}`)
     .then((response) => response.json())
     .then((data) => {
-      countingComments(data, commentTitle);
+      commentCounter(data, commentTitle);
       const commentList = document.querySelector('.comment-list');
       commentList.innerHTML = '';
       data.map((comment) => {

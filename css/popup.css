@@ -139,8 +139,9 @@ input[type='submit'] {
   background-color: grey;
 }
 
-.recipe-count {
-  font-size: 25px;
+.comment-count {
+  font-size: 30px;
+  text-align: center;
   color: #fff;
   z-index: 100px;
   padding: 10px;

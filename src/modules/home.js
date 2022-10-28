@@ -29,7 +29,7 @@ export default class Main {
 					</di>
 					<ul class="users-sections">
 						<li class="comments" id="${item.idMeal}">
-							<a href="#" class="comment-btn get-img">Commnets</a>
+							<a href="#" class="comment-btn get-img">Comment</a>
 						</li>
 					</ul>
     		</div>
