@@ -6,9 +6,11 @@ const url = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian';
 export default class Main {
   static main() {
     const mainPage = document.querySelector('.meals');
+    const mealNav = document.querySelector('.meal-nav');
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        mealNav.innerHTML = `Meal(${data.meals.length})`;
         data.meals.forEach((item) => {
           mainPage.innerHTML += `
 
